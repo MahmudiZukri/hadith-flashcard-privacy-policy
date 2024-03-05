@@ -287,19 +287,14 @@ nav {
   margin: 0 0 0 0;
  }
 
-nav h1 {
-  display: none;*//* (display off-page?) */
- }
-
 nav ul {
-  margin: 0 0 0 -22.5em;
+  margin: 0 0 100em -32%;
   padding: 0;
-  float: left;
-  position: absolute;
-  width: 45em;
+  position: absolute; 
   left: 50%;
   border: solid thin rgb(240,240,240);
-  list-style: none outside;
+  list-style: none outside;  
+  text-align: center;
  }
 
 nav li {
