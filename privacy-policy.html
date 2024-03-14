@@ -1,84 +1,110 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" media="all" type="text/css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    article {
-      max-width: 800px;
-      width: 90%;
-    }
-    section {
-      margin-top: 20px;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    h4 {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    /* Add margin bottom to the last section */
-    section:last-child {
-      margin-bottom: 60px;
-    }
-  </style>
-</head>
-<body>
-  <article>
-    <section>
-      <h1 id="information_en">Information</h1>
-      <h1 id="information_id" style="display: none;">Informasi</h1>
-      <h4 id="info_en">When you use our Hadith Flashcard app, you trust us with your information. Because we are deeply committed to your privacy, this Privacy Policy is intended to help you understand what data we collect and why we need it. This is important; we hope you take the time to read it carefully. We will explain it as clearly as possible.</h4>
-      <h4 id="info_id" style="display: none;">Ketika Anda menggunakan aplikasi Hadith Flashcard kami, Anda mempercayai kami dengan informasi Anda. Karena kami sangat berkomitmen terhadap privasi Anda, Kebijakan Privasi ini bertujuan untuk membantu Anda memahami data apa yang kami kumpulkan dan mengapa kami membutuhkannya. Ini penting; kami harap Anda mengambil waktu untuk membacanya dengan seksama. Kami akan menjelaskannya sejelas mungkin.</h4>
-    </section>
-    <section>
-      <h1 id="collecting_device_information_en">Collecting Device Information</h1>
-      <h1 id="collecting_device_information_id" style="display: none;">Pengumpulan Informasi Perangkat</h1>
-      <h4 id="device_en">The Hadith Flashcard app uses Google Firebase Analytics (a product owned by Google) to collect information such as device model, operating system version, and which features are frequently accessed in the app. We use this information to understand user experience and improve the app in future updates. It's important to note that nearly all apps on Google Play Store use Google Firebase Analytics.</h4>
-      <h4 id="device_id" style="display: none;">Aplikasi Hadith Flashcard menggunakan Google Firebase Analytics (produk milik Google) untuk mengumpulkan informasi seperti model perangkat, versi sistem operasi, dan fitur-fitur mana yang sering diakses dalam aplikasi. Kami menggunakan informasi ini untuk memahami pengalaman pengguna dan meningkatkan aplikasi di pembaruan mendatang. Penting untuk dicatat bahwa hampir semua aplikasi di Google Play Store menggunakan Google Firebase Analytics.</h4>
-    </section>
-    <section>
-      <h1 id="collecting_email_en">Collecting Email</h1>
-      <h1 id="collecting_email_id" style="display: none;">Pengumpulan Email</h1>
-      <h4 id="email_en">The Hadith Flashcard app uses Google Firebase Authentication for "Sign-In" in our app, allowing us to identify your Last Read and Bookmark data by automatically saving it to our server. Therefore, your email address will be indirectly stored in our Firebase dashboard and server. It's important to know that Firebase is a Google product, and Google does not allow developers (including us) to know your password in any way. So, you don't need to worry about losing your email account due to "Sign-In" in our app. We only collect your email address to facilitate the identification of your Flashcard, and we will not share your email address with anyone for any purpose.</h4>
-      <h4 id="email_id" style="display: none;">Aplikasi Hadith Flashcard menggunakan Otentikasi Firebase Google untuk "Masuk" di aplikasi kami, memungkinkan kami untuk mengidentifikasi data Baca Terakhir dan Tanda Buku Anda dengan menyimpannya secara otomatis ke server kami. Oleh karena itu, alamat email Anda akan tersimpan secara tidak langsung di dasbor dan server Firebase kami. Penting untuk diketahui bahwa Firebase adalah produk Google, dan Google tidak mengizinkan pengembang (termasuk kami) untuk mengetahui kata sandi Anda dengan cara apa pun. Jadi, Anda tidak perlu khawatir kehilangan akun email Anda karena "Masuk" di aplikasi kami. Kami hanya mengumpulkan alamat email Anda untuk memfasilitasi identifikasi Flashcard Anda, dan kami tidak akan membagikan alamat email Anda kepada siapa pun untuk tujuan apa pun.</h4>
-    </section>
-    <section>
-      <h1 id="security_information_en">Security Information</h1>
-      <h1 id="security_information_id" style="display: none;">Informasi Keamanan</h1>
-      <h4 id="security_en">We have implemented administrative and technical security measures believed to be very advanced to protect your data and privacy.</h4>
-      <h4 id="security_id" style="display: none;">Kami telah menerapkan langkah-langkah keamanan administratif dan teknis yang diyakini sangat canggih untuk melindungi data dan privasi Anda.</h4>
-    </section>
-  </article>
-
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get('lang');
-    if (lang === 'id') {
-      document.querySelectorAll('[id$="_en"]').forEach(elem => elem.style.display = 'none');
-      document.querySelectorAll('[id$="_id"]').forEach(elem => elem.style.display = 'block');
-    } else {
-      document.querySelectorAll('[id$="_id"]').forEach(elem => elem.style.display = 'none');
-      document.querySelectorAll('[id$="_en"]').forEach(elem => elem.style.display = 'block');
-    }
-
-    // Set dynamic title
-    const pageTitle = lang === 'id' ? "Kartu Hafalan Hadis - Kebijakan Privasi" : "Hadith Flashcard - Privacy Policy";
-    document.title = pageTitle;
-  </script>
-</body>
-</html>
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width'>
+      <title>Privacy Policy</title>
+      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
+    </head>
+    <body>
+    <strong>Privacy Policy</strong> <p>
+                  Mahmudi Zukri built the Kartu Hafalan Hadis app as
+                  an Ad Supported app. This SERVICE is provided by
+                  Mahmudi Zukri at no cost and is intended for use as
+                  is.
+                </p> <p>
+                  This page is used to inform visitors regarding my
+                  policies with the collection, use, and disclosure of Personal
+                  Information if anyone decided to use my Service.
+                </p> <p>
+                  If you choose to use my Service, then you agree to
+                  the collection and use of information in relation to this
+                  policy. The Personal Information that I collect is
+                  used for providing and improving the Service. I will not use or share your information with
+                  anyone except as described in this Privacy Policy.
+                </p> <p>
+                  The terms used in this Privacy Policy have the same meanings
+                  as in our Terms and Conditions, which are accessible at
+                  Kartu Hafalan Hadis unless otherwise defined in this Privacy Policy.
+                </p> <p><strong>Information Collection and Use</strong></p> <p>
+                  For a better experience, while using our Service, I
+                  may require you to provide us with certain personally
+                  identifiable information. The information that
+                  I request will be retained on your device and is not collected by me in any way.
+                </p> <div><p>
+                    The app does use third-party services that may collect
+                    information used to identify you.
+                  </p> <p>
+                    Link to the privacy policy of third-party service providers used
+                    by the app
+                  </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li><li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
+                  I want to inform you that whenever you
+                  use my Service, in a case of an error in the app
+                  I collect data and information (through third-party
+                  products) on your phone called Log Data. This Log Data may
+                  include information such as your device Internet Protocol
+                  (“IP”) address, device name, operating system version, the
+                  configuration of the app when utilizing my Service,
+                  the time and date of your use of the Service, and other
+                  statistics.
+                </p> <p><strong>Cookies</strong></p> <p>
+                  Cookies are files with a small amount of data that are
+                  commonly used as anonymous unique identifiers. These are sent
+                  to your browser from the websites that you visit and are
+                  stored on your device's internal memory.
+                </p> <p>
+                  This Service does not use these “cookies” explicitly. However,
+                  the app may use third-party code and libraries that use
+                  “cookies” to collect information and improve their services.
+                  You have the option to either accept or refuse these cookies
+                  and know when a cookie is being sent to your device. If you
+                  choose to refuse our cookies, you may not be able to use some
+                  portions of this Service.
+                </p> <p><strong>Service Providers</strong></p> <p>
+                  I may employ third-party companies and
+                  individuals due to the following reasons:
+                </p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p>
+                  I want to inform users of this Service
+                  that these third parties have access to their Personal
+                  Information. The reason is to perform the tasks assigned to
+                  them on our behalf. However, they are obligated not to
+                  disclose or use the information for any other purpose.
+                </p> <p><strong>Security</strong></p> <p>
+                  I value your trust in providing us your
+                  Personal Information, thus we are striving to use commercially
+                  acceptable means of protecting it. But remember that no method
+                  of transmission over the internet, or method of electronic
+                  storage is 100% secure and reliable, and I cannot
+                  guarantee its absolute security.
+                </p> <p><strong>Links to Other Sites</strong></p> <p>
+                  This Service may contain links to other sites. If you click on
+                  a third-party link, you will be directed to that site. Note
+                  that these external sites are not operated by me.
+                  Therefore, I strongly advise you to review the
+                  Privacy Policy of these websites. I have
+                  no control over and assume no responsibility for the content,
+                  privacy policies, or practices of any third-party sites or
+                  services.
+                </p> <p><strong>Children’s Privacy</strong></p> <div><p>
+                    These Services do not address anyone under the age of 13.
+                    I do not knowingly collect personally
+                    identifiable information from children under 13 years of age. In the case
+                    I discover that a child under 13 has provided
+                    me with personal information, I immediately
+                    delete this from our servers. If you are a parent or guardian
+                    and you are aware that your child has provided us with
+                    personal information, please contact me so that
+                    I will be able to do the necessary actions.
+                  </p></div> <!----> <p><strong>Changes to This Privacy Policy</strong></p> <p>
+                  I may update our Privacy Policy from
+                  time to time. Thus, you are advised to review this page
+                  periodically for any changes. I will
+                  notify you of any changes by posting the new Privacy Policy on
+                  this page.
+                </p> <p>This policy is effective as of 2024-03-14</p> <p><strong>Contact Us</strong></p> <p>
+                  If you have any questions or suggestions about my
+                  Privacy Policy, do not hesitate to contact me at hadithflashcard@gmail.com.
+                </p> <p>This privacy policy page was created at <a href="https://privacypolicytemplate.net" target="_blank" rel="noopener noreferrer">privacypolicytemplate.net </a>and modified/generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
+    </body>
+    </html>
+      
